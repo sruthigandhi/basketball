@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html#key-insights",
+    "href": "index.html#key-insights",
+    "title": "NBA Scorigami Center",
+    "section": "Key Insights",
+    "text": "Key Insights\nMost games cluster between 90–120 points per team.\nThe bright orange region near the center represents the scoring range where NBA games most commonly finish. This reflects the typical offensive output across modern NBA seasons.\nThe diagonal represents close games.\nScores near the diagonal indicate competitive games. The brightest region sits close to this line because most NBA games are decided by relatively small margins.\nBlowouts are uncommon.\nAs you move farther from the diagonal, games become increasingly rare. Large victory margins occur much less frequently than close contests.\nExtreme scores are outliers.\nThe isolated squares in the corners represent historically unusual games—either extremely low-scoring games from earlier eras or exceptionally high-scoring games caused by overtime or unusually fast-paced offenses."
+  },
+  {
+    "objectID": "index.html#did-you-know",
+    "href": "index.html#did-you-know",
+    "title": "NBA Scorigami Center",
+    "section": "Did You Know?",
+    "text": "Did You Know?\n\n🏀 The NBA has recorded tens of thousands of games since the 1946–47 inaugural season.\n⏱️ Overtime games account for many of the unusually high scores in the upper-right corner.\n📈 Because points are scored in one-, two-, and three-point increments, certain final scores occur far more frequently than others.\n⭐ A Scorigami occurs when an NBA game finishes with a score that has never happened before.\n\nHover over the visualization above to explore every score combination and discover which final scores are common—and which are nearly unique."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
