@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "NBA Scorigami Center"
+  navbar:
+    background: primary
+    left:
+      - text: Dashboard
+        href: index.qmd
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    include-in-header:
+      text: |
+        <script defer src="background.js"></script>
+        

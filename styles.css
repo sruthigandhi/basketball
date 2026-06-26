@@ -1,0 +1,182 @@
+/* ==========================================================
+   Animated Background
+========================================================== */
+
+body {
+  background: linear-gradient(135deg, #0b0b0d, #14141d, #0f0d14);
+  background-size: 300% 300%;
+  animation: gradientBG 18s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradientBG {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Background Canvas */
+
+#background-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Keep the page above the canvas */
+
+main,
+.content,
+.column-page,
+.column-body,
+.page-columns,
+.quarto-container,
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+/* Remove any translucent backgrounds */
+
+.page-columns,
+.column-page,
+.column-body,
+.content,
+main,
+.container,
+.container-fluid,
+.quarto-container {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+/* Make all text white */
+
+body,
+main,
+.content,
+.column-body,
+.column-page,
+.page-columns,
+p,
+li,
+span,
+div,
+td,
+th,
+label {
+    color: #ffffff !important;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff !important;
+}
+
+/* Links */
+
+a {
+    color: #ffb347;
+}
+
+a:hover {
+    color: #ffd27a;
+}
+
+/* ==========================================================
+   Glass Cards
+========================================================== */
+
+.glass-card {
+  background: rgba(18, 18, 22, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 20px;
+
+  padding: 28px;
+  margin: 45px auto;
+
+  box-shadow:
+    0 12px 40px rgba(0,0,0,.35);
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.glass-card.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.glass-card:hover{
+
+  transform:translateY(-8px);
+
+  border-color:rgba(255,170,60,.35);
+
+  box-shadow:
+    0 20px 55px rgba(0,0,0,.45),
+    0 0 40px rgba(255,150,40,.18);
+}
+
+/* nicer paragraphs */
+
+.glass-card p{
+
+  line-height:1.8;
+
+  font-size:1.05rem;
+
+}
+
+.glass-card ul{
+
+  line-height:1.8;
+
+}
+
+/* card headings */
+
+.glass-card h2,
+.glass-card h3{
+
+  margin-top:0;
+
+  letter-spacing:.04em;
+
+}
+
+/* Plotly transparent */
+
+.js-plotly-plot,
+.plot-container,
+.svg-container{
+
+    background:transparent !important;
+
+}
+
+.modebar{
+
+    background:transparent !important;
+
+}
